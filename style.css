@@ -1,0 +1,329 @@
+html, body {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    font-family: 'Anek Bangla';
+    margin: 0;
+    margin-top: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.328);
+    scroll-snap-align: center;
+}
+
+header h2 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+header h1 {
+    color: white;
+    position: absolute;
+    left: 23%;
+    top:30%;
+    font-weight: 600;
+    font-size: 5.5vw;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.menu {
+    display: inline-block;
+    width: 100%;
+    z-index: 1;
+    margin-left: 8vw;
+    justify-content: center;
+    position: fixed;
+    top: 89%;
+}
+
+.menu a {
+    margin-left: 1.5rem;
+    width: 7%;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    padding: 1px 1.2em;
+    font-size: 1.20vw;
+    border-radius: 0.5em;
+    background: #0000005c;
+}
+
+.menu a:last-child {
+    margin-right: 1.5rem;
+}
+
+.menu a:nth-child(2n) {
+    background: #3d220a7b;
+}
+
+section {
+    scroll-snap-align: center;
+}
+
+.analogie{
+    background-color: #3d220a7b;
+    height: 100vh;
+    position: relative;
+}
+@media screen and (max-height: 100%) {
+    .analogie {
+        height: 50%;
+    }
+}
+
+.analogie:nth-child(2n) {
+    background-color: #0000005c;
+}
+
+.analogie h2 {
+    font-size: 3.5vw;
+    line-height: 75px;
+    color: #F5F5F5;
+    margin: 0;
+
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.analogie:nth-child(2n) h2 {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+}
+
+.analogie h1 {
+    font-size: 4vw;
+    font-family: 'Permanent Marker', cursive;
+    line-height: 75px;
+    color: #f6c283;
+    margin: 0;
+    margin-right: 0;
+
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+
+.analogie:nth-child(2n) h1 {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+
+.analogie p {
+    margin: 0;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+
+    width: 40%;
+
+    vertical-align: middle;
+    line-height: 100%;
+
+    position: absolute;
+    left: 8%;
+    top: 40%;
+}
+
+.analogie:nth-child(2n) p {
+    position: absolute; 
+    left: 53%;
+    top: 45%;
+}
+
+.analogie img {
+    box-shadow: inset 25px 25px 50px 0 white ;
+    position: absolute;
+    left: 53%;
+    top: 37%; 
+    width: 40%;   
+}
+@media (max-width: 40%) {
+    img {
+        width: 100%;
+    }
+}
+
+.analogie:nth-child(2n) img {
+    position: absolute; 
+    left: 8%;
+    top: 37%;
+}
+
+section {
+    margin: 0;
+    margin-top: 0;
+    background-color: #0000005c;
+    height: 100vh;
+    position: relative;
+}
+
+.formulaire {
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.formulaire h2 {
+    margin: auto;
+    font-size: 5vw;
+    text-align: center;
+
+    position: relative;
+    top: 10%;
+}
+
+.formulaire h4 {
+    margin: 0;
+    font-size: 3vw;
+    position: relative;
+    top: 25%;
+}
+
+.formulaire p{
+    font-size: 2vw;
+    margin: 0;
+}
+
+form {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 33%;
+    top: 33%;   
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+label > span {
+    flex-shrink: 0;
+}
+
+input {
+    padding: 2px;
+}
+
+textarea {
+    vertical-align: middle;
+    font-family: 'Anek Bangla';
+}
+
+label > textarea {
+    resize: none;
+}
+
+input, textarea {
+    flex-grow: 1; 
+}
+
+#envoyer {
+    margin-top: 9px;
+    margin-left: 70%;
+    font-size: 20px;
+    padding: 5px 15px;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    color: #090909;
+    font-size: larger;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+}
+  
+.envoyer:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+  
+.envoyer:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+  
+.envoyer:hover:before {
+    top: -35%;
+    background-color: #3d220a;
+    border: solid 1px ;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+footer {
+    margin-top: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 31vh;
+    scroll-snap-align: center;
+}
+
+footer h1 {
+    margin: 0;
+    float: right;
+    margin-right: 15px;
+    font-size: 1.10rem;
+    padding: 6px;
+}
+
+footer h1:hover {
+    cursor: pointer;
+}
+
+.button {
+    width: 2%;
+    padding: 6px;
+    padding-top: 10px;
+    margin-left: 10px;
+    scroll-behavior: smooth;
+}
+
+footer p {
+    text-align: center;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: 3px;
+}
+
+a {
+    color: #c29f80;
+    text-decoration: none;
+}
+
