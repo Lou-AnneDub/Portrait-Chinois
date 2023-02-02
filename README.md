@@ -1,4 +1,6 @@
-Lien du site : https://etudiant.u-pem.fr/~lou-anne.dubille/portrait-chinois/
+Lien du site sur le serveur de l'IUT: https://etudiant.u-pem.fr/~lou-anne.dubille/portrait-chinois/
+
+Lien avec Github : https://lou-annedub.github.io/Portrait-Chinois/
 
 
 Procédure pour installer le site sur un serveur local XAMPP :
