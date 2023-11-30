@@ -1,4 +1,4 @@
-#Projet étudiant, lors de ma première annéee de BUT MMI (Métiers du Multimédia et de l'Internet)
+**Projet étudiant, lors de ma première annéee de BUT MMI (Métiers du Multimédia et de l'Internet)**
 
 Lien du site sur le serveur de l'IUT: https://etudiant.u-pem.fr/~lou-anne.dubille/portrait-chinois/
 
